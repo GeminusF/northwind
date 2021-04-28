@@ -1,0 +1,64 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header"><h5 class="title">Məhsul əlavə elə</h5></div>
+      <div class="card-body">
+        <form [formGroup]="productAddForm">
+          <div class="mb-3">
+            <label for="productName">Məhsul adı</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="productName"
+                formControlName="productName"
+                class="form-control"
+                placeholder="Məhsul adı"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="categoryId">Kateqoriya</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="categoryId"
+                formControlName="categoryId"
+                class="form-control"
+                placeholder="Kateqoriya"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="unitsInStock">Stok Ədədi</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="unitsInStock"
+                formControlName="unitsInStock"
+                class="form-control"
+                placeholder="Stok Ədədi"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="unitPrice">Qiyməti</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="unitPrice"
+                formControlName="unitPrice"
+                class="form-control"
+                placeholder="Qiyməti"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-fill btn-primary" (click) ="add()">
+          Əlavə elə
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
