@@ -25,6 +25,10 @@ export class ProductService {
     return this.httpClient.get<ListResponseModel<Product>>(newPath);
   }
   
+  getProductsByUnitPrice(min:number, max :number): Observable<ListResponseModel<Product>>{
+    let newPath = this.apiUrl + "Products/getbyunitprice?min=" + min + "&max=" + max
+    return this.httpClient.get<ListResponseModel<Product>>(newPath);
+  }
 
   add(product:Product) :Observable<ResponseModel>{
     let newPath = this.apiUrl + "Products/add"

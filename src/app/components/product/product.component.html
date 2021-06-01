@@ -18,6 +18,21 @@
 <div *ngIf="filterText.length > 3" class="alert alert-success">
   {{ filterText }} axtardınız
 </div>
+<div>&nbsp;</div>
+<div class="input-group mb-3">
+  <span class="input-group-text">₼</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+</div>
+<div>
+  <label for="customRange2" class="form-label">Qiymət Aralığı</label>
+  <input type="range" class="form-range" min="0" max="5" id="customRange2" />
+</div>
+<div class="input-group mb-3">
+  <span class="input-group-text">₼</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+</div>
+
+<div>&nbsp;</div>
 <div>
   <table *ngIf="dataLoaded != false" class="table">
     <thead>
